@@ -28,9 +28,9 @@ touch .gitignore
 Now write node_modules in first line of .gitignore
 
 
-## Now finally create a file TestConnectivity.js and test the mongodb & mongoose by connecting with database
+## Now finally create a file TestMongooseConnectivity.js and test the mongodb & mongoose by connecting with database
 
-see TestConnectivity.js for connection settings
+see TestMongooseConnectivity.js for connection settings
 
 > Congratulations ! if every thing is working file , else retry or contact me.
 
