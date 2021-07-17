@@ -105,7 +105,7 @@ Connected Succesfully with playground db
 
 ```
 
-
+### Open Mongodb Compass and explore newly created database
 
 > Congratulations ! if every thing is working file , else retry or contact me.
 
