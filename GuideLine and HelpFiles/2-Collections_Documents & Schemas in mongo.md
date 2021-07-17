@@ -4,7 +4,7 @@
 Collections are like a table in database
 
 # Schema 
-Schema is like the blue print / Structure of data a specific collection/ Model can accept
+Schema is like the blue print / Structure of data for specific collection/ Model can accept
 
 # Document
 Document is an instance or single row (Like in relational db) of a collection
@@ -51,7 +51,7 @@ const course=new Course({
 });
 ```
 
-## 5- save the document
+## 5- Save the document
 
 1. Save the document in db and await as it is a Asynchronous operation and returns a promise object
 2. Promised could be resolved (on successs) or could be rejected (on failure) based on save status.
@@ -89,13 +89,6 @@ async function createCourse(){
 createCourse();
 ```
 
-
-
-> Congratulations ! if every thing is working file , else retry or contact me.
-
-**#<<<<<<<<<<<<<<(((((((( Mongo db Guides by Master Spark ))))))))>>>>>>>>>>>>>>**
-
-
 ## Output
 
 ```
@@ -111,3 +104,9 @@ Connected Succesfully with playground db
 }
 
 ```
+
+
+
+> Congratulations ! if every thing is working file , else retry or contact me.
+
+**#<<<<<<<<<<<<<<(((((((( Mongo db Guides by Master Spark ))))))))>>>>>>>>>>>>>>**
