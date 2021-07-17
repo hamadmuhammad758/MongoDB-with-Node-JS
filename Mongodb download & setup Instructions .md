@@ -13,14 +13,18 @@ https://www.mongodb.com/try/download/community
 
 ## Create New Node Project and Initialize
 
-`<addr>` mkdir "MONGODB WITH NODE JS"
-`<addr>` cd "MONGODB WITH NODE JS"
-`<addr>` npm init --yes
-`<addr>` npm i mongoose
+```
+ mkdir "MONGODB WITH NODE JS"
+ cd "MONGODB WITH NODE JS"
+ npm init --yes
+ npm i mongoose
+```
 
 ## Add .gitignore file to not sync npm modules with github, and add name of node_modules folder
 
-<addr>` touch .gitignore
+```
+touch .gitignore
+```
 Now write node_modules in first line of .gitignore
 
 
@@ -30,4 +34,4 @@ see TestConnectivity.js for connection settings
 
 > Congratulations ! if every thing is working file , else retry or contact me.
 
-** #<<<<<<<<<<<<<<(((((((( Mongo db Guides by Master Spark ))))))))>>>>>>>>>>>>>> **
+**#<<<<<<<<<<<<<<(((((((( Mongo db Guides by Master Spark ))))))))>>>>>>>>>>>>>>**
