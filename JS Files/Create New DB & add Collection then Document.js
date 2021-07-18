@@ -3,8 +3,8 @@ const mongoose=require("mongoose");
 // I have added "NodeMongoDb" (a new db name) in mongoose.connect it will automatically create a new db with this name
 
 mongoose.connect("mongodb://localhost/NodeMongoDb")
-        .then(()=> console.log("Connected Succesfully with playground db"))
-        .catch(()=>console.log("Unable to connect with playground db"));
+        .then(()=> console.log("Connected Succesfully with NodeMongodb"))
+        .catch(()=>console.log("Unable to connect with NodeMongodb"));
 
 // See help file 2-Collections_Documents & Schemas in mongo.md
 
@@ -35,7 +35,9 @@ async function createCourse(){
         const result = await course.save();
 
         // display result
-        console.log(result)
+        console.log("Inside Create Course: "+result);
 };
 
-createCourse();
+//createCourse();
+
+module.exports=Course;
