@@ -71,6 +71,20 @@ async function getProducts(){
 
 }
 
-getProducts();
+async function getProductsUsingLogicalQuery(){
+        var result=await Product.
+                        find()
+                        .or([{name:"shampoo"},{price:40}])
+        console.log("Items whose price is 40 or name is shampoo",result);
+
+        var result=await Product.
+                        find()
+                        .and([{name:"shampoo"},{price:30}])
+        console.log("Items whose price is 30 and name is shampoo",result);
+
+}
+
+//getProducts();
+getProductsUsingLogicalQuery();
 
 

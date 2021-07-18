@@ -65,6 +65,9 @@ A product collection would be created and multiple products documents would be a
 
 # Now Let's reterive the documents on basis of some filters
 
+
+## Comparison Operator
+
 Below are some comparison filters that we will use in our project
 ```
 eq (equal to)
@@ -135,6 +138,43 @@ whose price is not equal to 30
  { _id: 60f3cd168e61cf0fc8e291c1, name: 'rice', price: 20, __v: 0 }
 ```
 
+# Logical Query Operator
+Some Logical Query Operators are
+```
+or
+and
+```
+Below is the function in which i used logical query operator
+
+async function getProductsUsingLogicalQuery(){
+        var result=await Product.
+                        find()
+                        .or([{name:"shampoo"},{price:40}])
+        console.log("Items whose price is 40 or name is shampoo",result);
+
+        var result=await Product.
+                        find()
+                        .and([{name:"shampoo"},{price:30}])
+        console.log("Items whose price is 30 and name is shampoo",result);
+
+}
+
+getProductsUsingLogicalQuery();
+
+### Output
+
+```
+Items whose price is 40 or name is shampoo [
+  { _id: 60f3cd178e61cf0fc8e291c4, name: 'shampoo', price: 30, __v: 0 },
+  { _id: 60f3cd178e61cf0fc8e291c6, name: 'Lotion', price: 40, __v: 0 }
+]
+Items whose price is 30 and name is shampoo [
+  { _id: 60f3cd178e61cf0fc8e291c4, name: 'shampoo', price: 30, __v: 0 }
+]
+```
 
 
 
+> Congratulations ! if every thing is working file , else retry or contact me.
+
+**#<<<<<<<<<<<<<<(((((((( Mongo db Guides by Master Spark ))))))))>>>>>>>>>>>>>>**
