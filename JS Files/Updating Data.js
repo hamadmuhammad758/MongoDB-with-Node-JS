@@ -52,6 +52,10 @@ async function updateByUpdateFirstApproach(id){
     console.log(course);
 }
 
-
+async function removeCourse(id){
+    //const removedCourse=await Course.deleteOne({_id:id});
+    const removedCourse=await Course.findByIdAndDelete(id);
+}
+removeCourse("60f3b8fb11b18a3bfcb26294");
 //updateByQueryFirstApproach("60f3b8fb11b18a3bfcb26294");
-updateByUpdateFirstApproach("60f3b8fb11b18a3bfcb26294");
+//updateByUpdateFirstApproach("60f3b8fb11b18a3bfcb26294");

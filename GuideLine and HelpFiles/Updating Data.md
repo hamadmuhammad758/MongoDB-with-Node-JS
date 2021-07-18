@@ -81,6 +81,14 @@ async function updateByUpdateFirstApproach(id){
 updateByUpdateFirstApproach("60f3b8fb11b18a3bfcb26294");
 ```
 
+# Deleting a Document
+
+```
+async function removeCourse(id){
+    //const removedCourse=await Course.deleteOne({_id:id});
+    const removedCourse=await Course.findByIdAndDelete(id);
+}
+```
 
 
 > Congratulations ! if every thing is working file , else retry or contact me.
