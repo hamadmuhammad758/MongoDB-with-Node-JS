@@ -21,7 +21,7 @@ const productSchema = new mongoose.Schema({
 const Product = mongoose.model("Product",productSchema);
 ```
 4. Now an async function has been created to add multiple items to product's collection
-
+```
 async function createProducts(array){
         for (let index = 0; index < array.length; index++) {
                 const element = array[index];
@@ -38,7 +38,7 @@ async function createProducts(array){
         // display result
         console.log("Inside Create Product: "+result);
 };
-
+```
 
 5. Create an array of JSON objects that resembled product schema
 
