@@ -51,7 +51,7 @@ All of 3 appraoches have their own pros and cons.
 Their is a tradeoff between query performance and data consistency and redundant data, see what suits you best.
 
 
-Now, Let's Look at some code and stuff
+## Now, Let's Look at some code and stuff
 
 1. Connect with db
 
@@ -138,3 +138,9 @@ async function listCourses(){
 > Congratulations ! if every thing is working file , else retry or contact me.
 
 **#<<<<<<<<<<<<<<(((((((( Mongo db Guides by Master Spark ))))))))>>>>>>>>>>>>>>**
+
+
+> Follow me at: 
+
+**#<<<<<<<<<<<<<<(((((((( https://github.com/hamadmuhammad758 ))))))))>>>>>>>>>>>>>>**
+**#<<<<<<<<<<<<<<(((((((( https://www.youtube.com/c/masterspark-hamad ))))))))>>>>>>>>>>>>>>**
